@@ -1,6 +1,6 @@
 # Air Quality Monitor Using ESP32, CCS811, and OLED Display
 
-This project monitors air quality using an ESP32, a CCS811 sensor for eCO2 and TVOC, and displays the results on an OLED screen. The system also provides a web interface for remote monitoring and signals poor air quality using an onboard LED.
+This project monitors air quality using an **ESP32**, a **CCS811 sensor** for eCO2 and TVOC, and displays the results on an **OLED screen**. The system also provides a web interface for remote monitoring and signals poor air quality using an onboard RGB LED.
 
 ## Air Quality Guidelines Based on Health Standards
 
@@ -34,13 +34,29 @@ TVOC ranges are based on recommendations from the German Federal Environment Age
 - **ESP32**: Microcontroller board with built-in WiFi capabilities.
 - **CCS811 Sensor**: For measuring eCO2 and TVOC.
 - **SSD1306 OLED Display**: For visualizing sensor data.
-- **LED**: Indicator for poor air quality.
+- **RGB LED**: Indicator for air quality (connected to GPIO 25, 26, and 27).
 - **Aluminum Heat Sink**: Recommended for better heat dissipation from the ESP32 to ensure accurate temperature readings.
-  
+
+### Pinout Configuration
+| Pin on ESP32 | Component          | Description                   |
+|--------------|--------------------|-------------------------------|
+| GPIO 25      | RGB LED (Red)      | Signals poor air quality       |
+| GPIO 26      | RGB LED (Green)    | Signals moderate air quality   |
+| GPIO 27      | RGB LED (Blue)     | Signals good air quality       |
+| GND          | CCS811 Sensor      | Ground connection              |
+| 3V3          | CCS811 Sensor      | Power supply                   |
+| SDA          | CCS811 & OLED      | Data line for I2C communication|
+| SCL          | CCS811 & OLED      | Clock line for I2C communication|
+
 ## Software Requirements
 - **Arduino IDE**: To upload the program to the ESP32.
 - Required Libraries: 
-  - `WiFi.h`, `WebServer.h`, `DNSServer.h`, `Adafruit_GFX.h`, `Adafruit_SSD1306.h`, `Adafruit_CCS811.h`.
+  - `WiFi.h`
+  - `WebServer.h`
+  - `DNSServer.h`
+  - `Adafruit_GFX.h`
+  - `Adafruit_SSD1306.h`
+  - `Adafruit_CCS811.h`
 
 ---
 
@@ -49,7 +65,7 @@ TVOC ranges are based on recommendations from the German Federal Environment Age
 - **Air Quality Classification**: Evaluates air quality based on established standards.
 - **OLED Display**: Real-time display of air quality data.
 - **Web Interface**: Access real-time data via a browser using the ESP32’s WiFi.
-- **LED Indicator**: Turns on when air quality is poor (Schlecht or Sehr Schlecht).
+- **RGB LED Indicator**: Changes color based on air quality (Red for poor, Green for moderate, Blue for good).
 - **Internal Temperature Monitoring**: Monitors the internal temperature of the ESP32.
 
 ---
@@ -103,6 +119,3 @@ For a full video demonstration of this project, check out the YouTube video belo
 
 ### Webserver View
 ![Interior View](IMG_0108.JPG)
-
-
----
