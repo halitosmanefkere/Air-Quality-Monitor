@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Privat/Projekte/Air Quality Monitor",
-      "program": "d:/Privat/Projekte/Air Quality Monitor/build/Debug/outDebug",
+      "cwd": "/Air Quality Monitor",
+      "program": "Air Quality Monitor/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
