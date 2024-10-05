@@ -26,7 +26,7 @@ TVOC ranges are based on recommendations from the German Federal Environment Age
 - **250–350 ppb (Schlecht / Poor)**: Poor air quality with the potential for irritation of the eyes, nose, and throat.
 - **> 350 ppb (Sehr Schlecht / Very Poor)**: Very poor air quality, requiring immediate action to improve ventilation or remove pollutant sources.
 
-**Reference**: Bundesgesundheitsbl - Gesundheitsforsch - Gesundheitsschutz Richtwerte für die Innenraumluft* [link](https://www.umweltbundesamt.de/sites/default/files/medien/pdfs/TVOC.pdf).
+**Reference**: *Bundesgesundheitsbl - Gesundheitsforsch - Gesundheitsschutz Richtwerte für die Innenraumluft* [link](https://www.umweltbundesamt.de/sites/default/files/medien/pdfs/TVOC.pdf).
 
 ---
 
@@ -71,7 +71,7 @@ TVOC ranges are based on recommendations from the German Federal Environment Age
 - **250–350 ppb**: Schlecht (Poor) – Potential for irritation.
 - **Above 350 ppb**: Sehr Schlecht (Very Poor) – Immediate action required.
 
-**Reference**: Bundesgesundheitsbl - Gesundheitsforsch - Gesundheitsschutz Richtwerte für die Innenraumluft* [link](https://www.umweltbundesamt.de/sites/default/files/medien/pdfs/TVOC.pdf).
+**Reference**: *Bundesgesundheitsbl - Gesundheitsforsch - Gesundheitsschutz Richtwerte für die Innenraumluft* [link](https://www.umweltbundesamt.de/sites/default/files/medien/pdfs/TVOC.pdf).
 
 ---
 
